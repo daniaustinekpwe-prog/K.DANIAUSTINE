@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daniaustine | Code, Fix, Build</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #173451;
+    background: #f8fcff;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid #dff3ff;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #0789e8;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #173451;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0789e8;
+}
+
+.btn {
+    display: inline-block;
+    background: #0789e8;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.btn:hover {
+    background: #056bb8;
+}
+
+.hero {
+    padding: 65px 7%;
+    background: linear-gradient(120deg, #dff3ff, white);
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 60px);
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.blue {
+    color: #0789e8;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #526a80;
+}
+
+section {
+    padding: 45px 7%;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #0789e8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #d6eafa;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 12px #1734510a;
+}
+
+.card h3 {
+    color: #0789e8;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.soft {
+    background: #eaf7ff;
+}
+
+.project-icon {
+    font-size: 55px;
+    background: #dff3ff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.game-area {
+    background: #f0f9ff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 12px;
+    overflow-wrap: anywhere;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    max-width: 160px;
+    border: 1px solid #a8d5f2;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact {
+    background: #0789e8;
+    color: white;
+}
+
+.contact .btn {
+    background: white;
+    color: #0789e8;
+}
+
+footer {
+    background: #102d50;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 45px 6%;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <div class="logo">⚙ DANIAUSTINE.</div>
+        <small>CODE • FIX • BUILD</small>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work">My Work</a>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+    <p class="subtitle">Technical Student | Mechanic | Coder</p>
+
+    <h1>
+        Hi, I'm <span class="blue">Daniaustine!</span>
+    </h1>
+
+    <h2>I build with code and solve problems with my hands.</h2>
+
+    <p>
+        Welcome to my website! Here I share my coding projects,
+        automotive learning, car repair work and small games.
+        Follow my journey as I learn, create and improve my skills.
+    </p>
+
+    <a class="btn" href="#work">Explore My Work</a>
+
+    <a class="btn"
+       href="https://wa.me/237651223813"
+       target="_blank" rel="noopener">
+       Contact Me
+    </a>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+    <p class="subtitle">My Services</p>
+    <h2>What I Do</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Coding & Websites</h3>
+            <p>
+                I practise HTML, CSS, JavaScript and C/C++.
+                I create websites and learn how to improve code.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚗</div>
+            <h3>Automobile Mechanics</h3>
+            <p>
+                I study car systems, workshop tools,
+                maintenance, diagnostics and mechanical repairs.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💡</div>
+            <h3>Digital Projects</h3>
+            <p>
+                I develop small games, creative websites
+                and technology projects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- MY WORK -->
+
+<section class="soft" id="work">
+    <p class="subtitle">My Portfolio</p>
+    <h2>My Work & Projects</h2>
+
+    <p>
+        This section is where I will showcase projects
+        and photographs of work I have completed.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="project-icon">💻</div>
+            <h3>My First Website</h3>
+            <p>
+                A personal website created while learning
+                web development.
+            </p>
+            <span class="subtitle">Coding</span>
+        </div>
+
+        <div class="card">
+            <div class="project-icon">🔧</div>
+            <h3>Workshop Practice</h3>
+            <p>
+                My automotive learning, tools, car systems
+                and practical workshop projects.
+            </p>
+            <span class="subtitle">Mechanics</span>
+        </div>
+
+        <div class="card">
+            <div class="project-icon">⚡</div>
+            <h3>Engineering Ideas</h3>
+            <p>
+                Projects combining electronics, sensors,
+                programming and automotive technology.
+            </p>
+            <span class="subtitle">Engineering</span>
+        </div>
+
+    </div>
+
+    <p>
+        <strong>Tip:</strong> Replace these sample projects
+        with your actual work as you complete it.
+    </p>
+</section>
+
+<!-- MINI GAMES -->
+
+<section id="games">
+    <p class="subtitle">Have Some Fun</p>
+    <h2>🎮 Mini Games</h2>
+
+    <div class="grid">
+
+        <!-- GAME 1 -->
+
+        <div class="card">
+            <div class="icon">🔢</div>
+            <h3>Guess the Number</h3>
+
+            <p>
+                Guess a secret number between 1 and 20.
+            </p>
+
+            <button class="btn" id="startGame">
+                Start Game
+            </button>
+
+            <div class="game-area" id="numberArea">
+                Press Start Game to play!
+            </div>
+        </div>
+
+        <!-- GAME 2 -->
+
+        <div class="card">
+            <div class="icon">✊</div>
+            <h3>Rock Paper Scissors</h3>
+
+            <p>Choose your move!</p>
+
+            <button class="btn" data-move="Rock">✊ Rock</button>
+            <button class="btn" data-move="Paper">✋ Paper</button>
+            <button class="btn" data-move="Scissors">✌ Scissors</button>
+
+            <div class="game-area" id="rpsResult">
+                Waiting for your move...
+            </div>
+        </div>
+
+        <!-- GAME 3 -->
+
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h3>Coding Quiz</h3>
+
+            <p id="quizQuestion">
+                What does HTML help create?
+            </p>
+
+            <div id="quizOptions">
+                <button class="btn" data-answer="correct">
+                    Web pages
+                </button>
+
+                <button class="btn" data-answer="wrong">
+                    Engine oil
+                </button>
+
+                <button class="btn" data-answer="wrong">
+                    Car tyres
+                </button>
+            </div>
+
+            <div class="game-area" id="quizResult">
+                Choose an answer!
+            </div>
+
+            <button class="btn" id="nextQuestion">
+                Next Question
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="soft">
+    <p class="subtitle">About Me</p>
+    <h2>Learning by Doing</h2>
+
+    <div class="card">
+        <p>
+            I'm Daniaustine, a technical student interested in
+            automobile mechanics, coding and engineering.
+        </p>
+
+        <p>
+            My goal is to improve my skills, build useful projects
+            and share my progress with other people.
+        </p>
+
+        <h3>Skills I'm Learning</h3>
+
+        <p>
+            💻 HTML & CSS<br>
+            🖥️ JavaScript and C/C++<br>
+            🚗 Automobile Mechanics<br>
+            🔌 Automotive Electrical Systems<br>
+            ⚙️ Mechanical Technology<br>
+            💡 Engineering and Problem Solving
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+    <h2>Let's Work Together!</h2>
+
+    <p>
+        Have a coding idea, need a simple website,
+        or want to discuss a project?
+    </p>
+
+    <p>
+        WhatsApp: <strong>+237 651 223 813</strong>
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/237651223813"
+       target="_blank" rel="noopener">
+       💬 Chat With Me on WhatsApp
+    </a>
+</section>
+
+<footer>
+    <h3>DANIAUSTINE. | CODE • FIX • BUILD</h3>
+
+    <p>
+        Learning. Creating. Repairing. Growing.
+    </p>
+
+    <p>
+        &copy; <span id="year"></span> Daniaustine.
+    </p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+/* GAME 1: GUESS THE NUMBER */
+
+let secretNumber;
+let attempts = 0;
+let gameStarted = false;
+
+const numberArea = document.getElementById("numberArea");
+
+document.getElementById("startGame").addEventListener("click", function () {
+    secretNumber = Math.floor(Math.random() * 20) + 1;
+    attempts = 0;
+    gameStarted = true;
+
+    numberArea.innerHTML = `
+        <p>Enter a number from 1 to 20:</p>
+        <input type="number" id="guessInput" min="1" max="20">
+        <button class="btn" id="guessButton">Guess</button>
+        <p id="guessResult"></p>
+    `;
+
+    document.getElementById("guessButton").addEventListener(
+        "click", checkGuess
+    );
+
+    document.getElementById("guessInput").addEventListener(
+        "keydown", function (event) {
+            if (event.key === "Enter") {
+                checkGuess();
+            }
+        }
+    );
+});
+
+function checkGuess() {
+    if (!gameStarted) return;
+
+    const input = document.getElementById("guessInput");
+    const guess = Number(input.value);
+    const result = document.getElementById("guessResult");
+
+    if (
+        input.value.trim() === "" ||
+        !Number.isInteger(guess) ||
+        guess < 1 ||
+        guess > 20
+    ) {
+        result.textContent = "Enter a whole number from 1 to 20.";
+        return;
+    }
+
+    attempts++;
+
+    if (guess === secretNumber) {
+        result.textContent =
+            "🎉 Correct! You won in " + attempts + " attempts!";
+        gameStarted = false;
+    } else if (guess < secretNumber) {
+        result.textContent = "Too low! Try a bigger number.";
+    } else {
+        result.textContent = "Too high! Try a smaller number.";
+    }
+}
+
+/* GAME 2: ROCK PAPER SCISSORS */
+
+document.querySelectorAll("[data-move]").forEach(function (button) {
+    button.addEventListener("click", function () {
+        const player = button.dataset.move;
+        const moves = ["Rock", "Paper", "Scissors"];
+
+        const computer =
+            moves[Math.floor(Math.random() * moves.length)];
+
+        let result;
+
+        if (player === computer) {
+            result = "It's a draw!";
+        } else if (
+            (player === "Rock" && computer === "Scissors") ||
+            (player === "Paper" && computer === "Rock") ||
+            (player === "Scissors" && computer === "Paper")
+        ) {
+            result = "🎉 You win!";
+        } else {
+            result = "The computer wins!";
+        }
+
+        document.getElementById("rpsResult").textContent =
+            "You chose " + player +
+            ". Computer chose " + computer +
+            ". " + result;
+    });
+});
+
+/* GAME 3: CODING QUIZ */
+
+const questions = [
+    {
+        question: "What does HTML help create?",
+        options: ["Web pages", "Engine oil", "Car tyres"],
+        correct: 0,
+        explanation: "Correct! HTML structures web page content."
+    },
+    {
+        question: "What does CSS control?",
+        options: ["Fuel pressure", "Website style", "Battery voltage"],
+        correct: 1,
+        explanation: "Correct! CSS controls a website's appearance."
+    },
+    {
+        question: "Which tool measures small diameters accurately?",
+        options: ["Paint brush", "Hammer", "Micrometer"],
+        correct: 2,
+        explanation: "Correct! A micrometer measures small dimensions."
+    }
+];
+
+let questionIndex = 0;
+
+function showQuestion() {
+    const question = questions[questionIndex];
+
+    document.getElementById("quizQuestion").textContent =
+        question.question;
+
+    const optionsBox = document.getElementById("quizOptions");
+    optionsBox.innerHTML = "";
+
+    question.options.forEach(function (option, index) {
+        const button = document.createElement("button");
+
+        button.className = "btn";
+        button.textContent = option;
+
+        button.addEventListener("click", function () {
+            const result = document.getElementById("quizResult");
+
+            if (index === question.correct) {
+                result.textContent = question.explanation;
+            } else {
+                result.textContent = "Not quite! Try another answer.";
+            }
+        });
+
+        optionsBox.appendChild(button);
+    });
+
+    document.getElementById("quizResult").textContent =
+        "Choose an answer!";
+}
+
+document.getElementById("nextQuestion").addEventListener(
+    "click", function () {
+        questionIndex = (questionIndex + 1) % questions.length;
+        showQuestion();
+    }
+);
+</script>
+
+</body>
+</html>
